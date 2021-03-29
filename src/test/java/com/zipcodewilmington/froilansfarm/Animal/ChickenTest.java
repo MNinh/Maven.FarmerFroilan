@@ -19,16 +19,17 @@ public class ChickenTest{
         Assert.assertTrue(chick.isFertilized());
     }
 
-//    @Test
-//    public void yieldTest(){
-//        Chicken chick = new Chicken("Big Bird");
-//
-//
-//        Egg expected = new Egg();
-//        Egg actual = chick.yield();
-//
-//        Assert.assertEquals(expected , actual);
-//    }
+    @Test
+    public void yieldTest(){
+        Chicken chick = new Chicken("Big Bird");
+
+
+        Egg egg = new Egg();
+        String expected = egg.toString();
+        String actual = chick.yield().toString();
+
+        Assert.assertEquals(expected , actual);
+    }
 
     @Test
     public void yieldTest2(){
