@@ -15,4 +15,8 @@ public class Pilot extends Farmer{
     public void operate(CropDuster cropDuster){
     }
 
+
+    public String makeNoise(){
+        return "I'm farmer Froilanda";
+    }
 }
